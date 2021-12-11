@@ -26,4 +26,6 @@ public class MemberController {
         model.addAttribute("memberList", memberList);
         return "member-list";
     }
+
+    // 안녕하세요 저는 김중혁입니다.스터디룸예약이 22분남았네요 . 내일은 우리 쉬도록 해요^^
 }

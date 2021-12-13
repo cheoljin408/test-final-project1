@@ -18,8 +18,10 @@ public class MemberService {
         this.memberMapper = memberMapper;
     }
 
+    /*
     public List<MemberDTO> getMemberList() {
         List<MemberDTO> memberList = memberMapper.getMemberList();
         return memberList;
     }
+     */
 }

@@ -7,5 +7,9 @@ import java.util.List;
 
 @Mapper
 public interface MemberMapper {
-    List<MemberDTO> getMemberList();
+    MemberDTO findByEmail(String email);
+
+    void registerMember(MemberDTO memberDTO);
+
+    void updateMember(MemberDTO memberDTO);
 }

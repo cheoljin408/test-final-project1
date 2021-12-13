@@ -33,6 +33,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
 	// implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper'
 
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 
 }
 

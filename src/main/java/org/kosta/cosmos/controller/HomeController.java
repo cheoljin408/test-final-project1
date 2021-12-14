@@ -1,6 +1,7 @@
 package org.kosta.cosmos.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.kosta.cosmos.config.auth.LoginUser;
 import org.kosta.cosmos.config.auth.dto.SessionMember;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,12 +16,11 @@ public class HomeController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String home(Model model) {
-        SessionMember member = (SessionMember) httpSession.getAttribute("member");
+    public String home(Model model, @LoginUser SessionMember member) {
+
         if(member != null) {
             model.addAttribute("member", member);
         }
-
 
         return "index";
     }
